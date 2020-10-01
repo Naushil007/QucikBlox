@@ -24,11 +24,11 @@ Here is a list of supported endpoints (more to come in the future):
 ### USER RELATED METHODS:
 ##### For more information regarding message API refer this link : https://docs.quickblox.com/reference/users
 - array loginUser($token, array $args = []);
-- logoutUser($token);
-- resetPassword($token, $email)
 - array createUsers($token, array $args = [])
 - array updateUsers($token, $userId, array $args = [])
 - array getUsers($token, $perpage)
+- logoutUser($token);
+- resetPassword($token, $email)
 - deleteUsers($token, 'USERID', $userId)
 - deleteUsers($token, 'EXTERNAL', $userId)
 
@@ -52,16 +52,25 @@ Here is a list of supported endpoints (more to come in the future):
 - array getDialog($token,'COUNT', $type, $perPage=5);
 - array getDialog($token,'FILTER', array $args = [], $perPage=5);
 - array updateDialog($token,'', $id, array $args = []);
-- deleteDialog($token, array $args = [], $force);
 - array getNotificationSetting($token, $dialogId);
 - array updateNotificationSetting($token, $dialogId, array $args = []);
+- deleteDialog($token, array $args = [], $force);
 
-### Message RELATED METHODS:
+### MESSAGE RELATED METHODS:
 ##### For more information regarding message API refer this link : https://docs.quickblox.com/reference/chat#list-messages
 
 - array getMessages($token, array $args = []); 
 - array updateMessages($token, array $args = [], $dialogMessageId);
-- deleteMessages($token, $ids, $force);
 - array unreadMessagesCount($token);
 - array unreadMessagesCount($token, $ids);
+- deleteMessages($token, $ids, $force);
+
+### CONTENT RELATED METHODS:
+- array getFiles($token);
+- array getFiles($token, $perPage);
+- array updateFile($token, array $args = [], $contentId);
+- array getFileById($token, $contentId);
+- downloadFileByUid($token, $uId);
+- deleteFile($token, $contentId);
+
 
