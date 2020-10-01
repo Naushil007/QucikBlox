@@ -16,11 +16,13 @@ include 'quickblox.php';
 Here is a list of supported endpoints (more to come in the future):
 
 ### SESSION RELATED METHODS:
+##### For more information regarding message API refer this link : https://docs.quickblox.com/reference/authentication
 - object createSession()
 - array getSession($token)
 - array deleteSession($token)
 
 ### USER RELATED METHODS:
+##### For more information regarding message API refer this link : https://docs.quickblox.com/reference/users
 - array loginUser($token, $args = []);
 - logoutUser($token);
 - resetPassword($token, $email)
@@ -43,6 +45,7 @@ Here is a list of supported endpoints (more to come in the future):
 
 
 ### DIALOG RELATED METHODS:
+##### For more information regarding message API refer this link : https://docs.quickblox.com/reference/chat#dialogs
 - array createDialog($token, $dialogData);
 - array getDialog($token,'ALL','', $perPage=5);
 - array getDialog($token,'ID', $id, $perPage=5);
@@ -53,7 +56,7 @@ Here is a list of supported endpoints (more to come in the future):
 - array getNotificationSetting($token, $dialogId);
 - array updateNotificationSetting($token, $dialogId, $args = []);
 
-### DIALOG RELATED METHODS:
+### Message RELATED METHODS:
 ##### For more information regarding message API refer this link : https://docs.quickblox.com/reference/chat#list-messages
 
 - array getMessages($token, $args = []); 
