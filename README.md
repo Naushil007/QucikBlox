@@ -87,3 +87,8 @@ Here is a list of supported endpoints (more to come in the future):
 - array createSubscription($token);
 - array getSubscriptions($token);
 - deleteSubscription($token, $subscriptionId);
+
+### ADDRESS BOOK RELATED METHODS:
+- array uploadAddressBook($token, array $args = []);
+- array getAddressBook($token);
+- array getListRegisteredUsers($token, array $args = []);
