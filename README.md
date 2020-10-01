@@ -34,7 +34,7 @@ Here is a list of supported endpoints (more to come in the future):
 
 #### List View
 - array filterUsersByParam($token, 'FULLNAME', $name)
-- $array filterUsersByParam($token, 'TAGS', $commaSeparatedTags)
+- array filterUsersByParam($token, 'TAGS', $commaSeparatedTags)
 
 #### Single View
 - array filterUsersByParam($token, 'ID', $id)
