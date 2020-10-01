@@ -21,7 +21,6 @@ Here is a list of supported endpoints (more to come in the future):
 - array deleteSession($token)
 
 ### USER RELATED METHODS:
-
 - array loginUser($token, $args = []);
 - logoutUser($token);
 - resetPassword($token, $email)
@@ -44,9 +43,8 @@ Here is a list of supported endpoints (more to come in the future):
 
 
 ### DIALOG RELATED METHODS:
-
 - array createDialog($token, $dialogData);
-- array getDialog($token,'ALL','',$perPage=5);
+- array getDialog($token,'ALL','', $perPage=5);
 - array getDialog($token,'ID', $id, $perPage=5);
 - array getDialog($token,'COUNT', $type, $perPage=5);
 - array getDialog($token,'FILTER', $args = [], $perPage=5);
@@ -55,4 +53,12 @@ Here is a list of supported endpoints (more to come in the future):
 - array getNotificationSetting($token, $dialogId);
 - array updateNotificationSetting($token, $dialogId, $args = []);
 
+### DIALOG RELATED METHODS:
+##### For more information regarding message API refer this link : https://docs.quickblox.com/reference/chat#list-messages
+
+- array getMessages($token, $args = []); 
+- array updateMessages($token, $args = [], $dialogMessageId);
+- deleteMessages($token, $ids, $force);
+- array unreadMessagesCount($token);
+- array unreadMessagesCount($token, $ids);
 
