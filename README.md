@@ -16,5 +16,30 @@ include 'quickblox.php';
 Here is a list of supported endpoints (more to come in the future):
 
 ### SESSION RELATED METHODS:
+- object createSession()
+- array getSession($token)
+- array deleteSession($token)
 
-- object createSession();
+### USER RELATED METHODS:
+
+- array loginUser($token, $args = []);
+- logoutUser($token);
+- resetPassword($token, $email)
+- array createUsers($token, array $args = [])
+- array updateUsers($token, $userId, $args = [])
+- array getUsers($token, $perpage)
+- deleteUsers($token, 'USERID', $userId)
+- deleteUsers($token, 'EXTERNAL', $userId)
+
+#### List View
+- array filterUsersByParam($token, 'FULLNAME', 'Naushil Jain')
+- $array filterUsersByParam($token, 'TAGS', 'marketing,seo')
+
+#### Single View
+- array filterUsersByParam($token, 'ID', $id)
+- array filterUsersByParam($token, 'LOGIN', $name)
+- array filterUsersByParam($token, 'FACEBOOK', $id)
+- array filterUsersByParam($token, 'EMAIL',  $email)
+- array filterUsersByParam($token, 'EXTERNAL', $value)
+
+
