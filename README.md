@@ -15,6 +15,6 @@ include 'quickblox.php';
 # Implemented endpoints
 Here is a list of supported endpoints (more to come in the future):
 
-# SESSION RELATED METHODS:
+### SESSION RELATED METHODS:
 
 - object createSession();
