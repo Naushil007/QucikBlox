@@ -46,32 +46,44 @@ Here is a list of supported endpoints (more to come in the future):
 
 ### DIALOG RELATED METHODS:
 ##### For more information regarding DIALOG API refer this link : https://docs.quickblox.com/reference/chat#dialogs
-- array createDialog($token, $dialogData);
-- array getDialog($token,'ALL','', $perPage=5);
-- array getDialog($token,'ID', $id, $perPage=5);
-- array getDialog($token,'COUNT', $type, $perPage=5);
-- array getDialog($token,'FILTER', array $args = [], $perPage=5);
-- array updateDialog($token,'', $id, array $args = []);
-- array getNotificationSetting($token, $dialogId);
-- array updateNotificationSetting($token, $dialogId, array $args = []);
-- deleteDialog($token, array $args = [], $force);
+- array createDialog($token, $dialogData)
+- array getDialog($token,'ALL','', $perPage=5)
+- array getDialog($token,'ID', $id, $perPage=5)
+- array getDialog($token,'COUNT', $type, $perPage=5)
+- array getDialog($token,'FILTER', array $args = [], $perPage=5)
+- array updateDialog($token,'', $id, array $args = [])
+- array getNotificationSetting($token, $dialogId)
+- array updateNotificationSetting($token, $dialogId, array $args = [])
+- deleteDialog($token, array $args = [], $force)
 
 ### MESSAGE RELATED METHODS:
 ##### For more information regarding MESSAGE API refer this link : https://docs.quickblox.com/reference/chat#list-messages
-
-- array getMessages($token, array $args = []); 
-- array updateMessages($token, array $args = [], $dialogMessageId);
-- array unreadMessagesCount($token);
-- array unreadMessagesCount($token, $ids);
-- deleteMessages($token, $ids, $force);
+- array getMessages($token, array $args = [])
+- array updateMessages($token, array $args = [], $dialogMessageId)
+- array unreadMessagesCount($token)
+- array unreadMessagesCount($token, $ids)
+- deleteMessages($token, $ids, $force)
 
 ### CONTENT RELATED METHODS:
 ##### For more information regarding CONTENT API refer this link : https://docs.quickblox.com/reference/content
-- array getFiles($token);
-- array getFiles($token, $perPage);
-- array updateFile($token, array $args = [], $contentId);
-- array getFileById($token, $contentId);
-- downloadFileByUid($token, $uId);
-- deleteFile($token, $contentId);
+- array getFiles($token)
+- array getFiles($token, $perPage)
+- array updateFile($token, array $args = [], $contentId)
+- array getFileById($token, $contentId)
+- downloadFileByUid($token, $uId)
+- deleteFile($token, $contentId)
 
+### PUSH NOTIFICATIONS RELATED METHODS:
+##### For more information regarding PUSH NOTIFICATIONS API refer this link :https://docs.quickblox.com/reference/push-notifications
 
+#### EVENTS RELATED METHODS:
+- array createEvent($token, array $args = [])
+- array getEvents($token)
+- array getEventById($token, $eventId)
+- array updateEvent($token, array $args = [], $eventId);
+- deleteEvent($token, $eventId)
+
+#### SUBSCRIPTION RELATED METHODS:
+- array createSubscription($token);
+- array getSubscriptions($token);
+- deleteSubscription($token, $subscriptionId);
