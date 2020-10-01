@@ -74,7 +74,7 @@ Here is a list of supported endpoints (more to come in the future):
 - deleteFile($token, $contentId)
 
 ### PUSH NOTIFICATIONS RELATED METHODS:
-##### For more information regarding PUSH NOTIFICATIONS API refer this link :https://docs.quickblox.com/reference/push-notifications
+##### For more information regarding PUSH NOTIFICATIONS API refer this link : https://docs.quickblox.com/reference/push-notifications
 
 #### EVENTS RELATED METHODS:
 - array createEvent($token, array $args = [])
@@ -89,6 +89,8 @@ Here is a list of supported endpoints (more to come in the future):
 - deleteSubscription($token, $subscriptionId);
 
 ### ADDRESS BOOK RELATED METHODS:
+##### For more information regarding PUSH NOTIFICATIONS API refer this link : https://docs.quickblox.com/reference/address-book
 - array uploadAddressBook($token, array $args = []);
 - array getAddressBook($token);
 - array getListRegisteredUsers($token, array $args = []);
+
