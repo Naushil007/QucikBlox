@@ -32,8 +32,8 @@ Here is a list of supported endpoints (more to come in the future):
 - deleteUsers($token, 'EXTERNAL', $userId)
 
 #### List View
-- array filterUsersByParam($token, 'FULLNAME', 'Naushil Jain')
-- $array filterUsersByParam($token, 'TAGS', 'marketing,seo')
+- array filterUsersByParam($token, 'FULLNAME', $name)
+- $array filterUsersByParam($token, 'TAGS', $commaSeparatedTags)
 
 #### Single View
 - array filterUsersByParam($token, 'ID', $id)
@@ -41,5 +41,18 @@ Here is a list of supported endpoints (more to come in the future):
 - array filterUsersByParam($token, 'FACEBOOK', $id)
 - array filterUsersByParam($token, 'EMAIL',  $email)
 - array filterUsersByParam($token, 'EXTERNAL', $value)
+
+
+### DIALOG RELATED METHODS:
+
+- array createDialog($token, $dialogData);
+- array getDialog($token,'ALL','',$perPage=5);
+- array getDialog($token,'ID', $id, $perPage=5);
+- array getDialog($token,'COUNT', $type, $perPage=5);
+- array getDialog($token,'FILTER', $args = [], $perPage=5);
+- array updateDialog($token,'', $id, $args = []);
+- deleteDialog($token, $args = [], $force);
+- array getNotificationSetting($token, $dialogId);
+- array updateNotificationSetting($token, $dialogId, $args = []);
 
 
