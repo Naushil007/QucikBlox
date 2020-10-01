@@ -16,13 +16,13 @@ include 'quickblox.php';
 Here is a list of supported endpoints (more to come in the future):
 
 ### SESSION RELATED METHODS:
-##### For more information regarding message API refer this link : https://docs.quickblox.com/reference/authentication
+##### For more information regarding SESSION API refer this link : https://docs.quickblox.com/reference/authentication
 - object createSession()
 - array getSession($token)
 - array deleteSession($token)
 
 ### USER RELATED METHODS:
-##### For more information regarding message API refer this link : https://docs.quickblox.com/reference/users
+##### For more information regarding USER API refer this link : https://docs.quickblox.com/reference/users
 - array loginUser($token, array $args = []);
 - array createUsers($token, array $args = [])
 - array updateUsers($token, $userId, array $args = [])
@@ -45,7 +45,7 @@ Here is a list of supported endpoints (more to come in the future):
 
 
 ### DIALOG RELATED METHODS:
-##### For more information regarding message API refer this link : https://docs.quickblox.com/reference/chat#dialogs
+##### For more information regarding DIALOG API refer this link : https://docs.quickblox.com/reference/chat#dialogs
 - array createDialog($token, $dialogData);
 - array getDialog($token,'ALL','', $perPage=5);
 - array getDialog($token,'ID', $id, $perPage=5);
@@ -57,7 +57,7 @@ Here is a list of supported endpoints (more to come in the future):
 - deleteDialog($token, array $args = [], $force);
 
 ### MESSAGE RELATED METHODS:
-##### For more information regarding message API refer this link : https://docs.quickblox.com/reference/chat#list-messages
+##### For more information regarding MESSAGE API refer this link : https://docs.quickblox.com/reference/chat#list-messages
 
 - array getMessages($token, array $args = []); 
 - array updateMessages($token, array $args = [], $dialogMessageId);
@@ -66,6 +66,7 @@ Here is a list of supported endpoints (more to come in the future):
 - deleteMessages($token, $ids, $force);
 
 ### CONTENT RELATED METHODS:
+##### For more information regarding CONTENT API refer this link : https://docs.quickblox.com/reference/content
 - array getFiles($token);
 - array getFiles($token, $perPage);
 - array updateFile($token, array $args = [], $contentId);
