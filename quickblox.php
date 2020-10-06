@@ -275,13 +275,30 @@ function deleteSubscription($token, $id) {
 }
 
 /***********************************************************************************************************/
+//                                        Address Book            
+/***********************************************************************************************************/
 
+function uploadAddressBook($token, $extraData) {
+    $url = 'address_book.json';
+    return customCurl($token, $url, $extraData, 'POST');
+}
+
+function getAddressBook($token, $extraData = []) {
+    $url = 'address_book.json';
+    return customCurl($token, $url, $extraData, 'GET');
+}
+
+function getListRegisteredUsers($token, $extraData = []) {
+    $url = 'address_book/registered_users.json';
+    return customCurl($token, $url, $extraData, 'GET');
+}
+
+/***********************************************************************************************************/
 //                                        Extra Useful Functions            
-
 /***********************************************************************************************************/
 
 function customCurl($token, $url, $postData = [], $method = 'POST'){
-    $postData = http_build_query($postData);
+    $postData = json_encode($postData);
     $curl = curl_init();
     curl_setopt($curl, CURLOPT_URL, QUICKBLOX_API_ENDPOINT.$url);
     curl_setopt($curl, CURLOPT_CUSTOMREQUEST, $method);
@@ -290,8 +307,7 @@ function customCurl($token, $url, $postData = [], $method = 'POST'){
     }
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($curl, CURLOPT_HTTPHEADER, array(
-        'Accept: application/json',
-        'Content-Type: application/x-www-form-urlencoded',
+        'Content-Type: application/json',
         'QuickBlox-REST-API-Version: 0.1.0',
         'QB-Token: ' . $token
     ));
