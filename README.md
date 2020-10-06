@@ -1,4 +1,4 @@
-# QucikBlox
+# QuickBlox
 QuickBlox-PHP-REST-APIs is a modern PHP library based on QuickBlox.
 
 ## REST API
