@@ -1,8 +1,8 @@
 # QucikBlox
-QucikBlox-PHP-REST-APIs is a modern PHP library based on QuickBlox.
+QuickBlox-PHP-REST-APIs is a modern PHP library based on QuickBlox.
 
 ## REST API
-QucikBlox-PHP-REST-APIs provides a mapping with API methods defined in QuickBlox doc. It also supports a basic integration with the new QuickBlox APIs.
+QuickBlox-PHP-REST-APIs provides a mapping with API methods defined in QuickBlox doc. It also supports a basic integration with the new QuickBlox APIs.
 
 ## Setup & Installation
 Setup all your credentials in config.php file.
