@@ -4,7 +4,6 @@ DEFINE('APPLICATION_ID', 'Your Application Key'); // Enter your application ID
 DEFINE('AUTH_KEY', "Your Auth Key"); // Enter yur auth key
 DEFINE('AUTH_SECRET', "Your Auth Secret"); // Enter your secret key
 DEFINE('ACCOUNT_KEY', "Your Account Key"); // Enter your secret key
-// Account Key : RKG1hKxSVd9hxSHJarXm
 // User credentials
 DEFINE('USER_LOGIN', ""); // Your Username
 DEFINE('USER_PASSWORD', ""); // Your Password
