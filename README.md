@@ -7,7 +7,7 @@ QuickBlox-PHP-REST-APIs provides a mapping with API methods defined in QuickBlox
 ## Setup & Installation
 Setup all your credentials in config.php file.
 
-## Use
+## Usage
 To use above REST APIs you have to simply import QuickBlox.php class file to your file where you want to use it's APIs. Like Below.
 
 include 'quickblox.php';
